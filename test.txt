@@ -1,0 +1,9 @@
+This is Just a test file will be removed later
+
+student method: notify
+teacher method: notify students
+notificationMediator: get notification from teacher and send notification to each student
+
+create notification with four adapter classes and initate the apter according to the prefered types by using the factory pattern
+
+for indirection create teacher controller with method getstudentbysemester to notify which will use mediator object

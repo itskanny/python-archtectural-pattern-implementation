@@ -1,0 +1,2 @@
+class StudentController():
+    pass
