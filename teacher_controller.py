@@ -7,6 +7,8 @@ from student import Student
 import json
 
 
+# Teacher controller class that implements indirection
+
 class TeacherController:
 
     def __init__(self, id):

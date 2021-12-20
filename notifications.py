@@ -17,6 +17,8 @@ class Notification:
         self.adapter.send_notification(sender, receiver, message)
 
 
+# These classes help in implementing adapter pattern
+
 class BaseAdapter:
     def send_notification(self, sender, receiver, message):
         pass
@@ -46,8 +48,11 @@ class SmsNotificationAdapter(BaseAdapter):
 class RealtimeNotificationAdapter(BaseAdapter):
 
     def send_notification(self, sender, receiver, message):
-        print(f"Realtime =Notification for email: {receiver.email}, username: {receiver.name} from {sender.email} with the message: '{message}'")
+        print(
+            f"Realtime =Notification for email: {receiver.email}, username: {receiver.name} from {sender.email} with the message: '{message}'")
 
+
+# This class implements factory pattern
 
 class NotificationFactory:
 
@@ -64,6 +69,7 @@ class NotificationFactory:
         else:
             raise Exception("Adapter Type Undefined")
 
+# Mediator Pattern implementation
 
 class NotificationMediator:
 

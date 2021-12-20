@@ -1,6 +1,8 @@
 class Teacher:
 
-    def __init__(self, id = None, name = None, email = None, semester = None, preferred_notification = None):
+    # Data class for Teacher
+
+    def __init__(self, id=None, name=None, email=None, semester=None, preferred_notification=None):
         self.id = id
         self.name = name
         self.email = email
@@ -18,5 +20,3 @@ class Teacher:
 
     def view(self):
         pass
-
-

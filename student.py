@@ -1,9 +1,12 @@
 from notifications import Notification
 
 
+# Data class for student
+
 class Student:
 
-    def __init__(self, id = None, email = None, name = None, roll_number = None, batch = None, section = None, cgpa = None, semester = None, prefered_notification = None):
+    def __init__(self, id=None, email=None, name=None, roll_number=None, batch=None, section=None, cgpa=None,
+                 semester=None, prefered_notification=None):
         self.id = id
         self.name = name
         self.email = email
@@ -43,6 +46,3 @@ class Student:
     def from_dict(cls, data_dict):
         student = Student(**data_dict)
         return student
-
-
-
