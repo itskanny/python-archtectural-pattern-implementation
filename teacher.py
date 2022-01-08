@@ -1,11 +1,12 @@
-class Teacher:
+from person import Person
+
+
+class Teacher(Person):
 
     # Data class for Teacher
 
     def __init__(self, id=None, name=None, email=None, semester=None, preferred_notification=None):
-        self.id = id
-        self.name = name
-        self.email = email
+        super().__init__(id=id, email=email, name=name)
         self.semester = semester
         self.preferred_notification = preferred_notification
 

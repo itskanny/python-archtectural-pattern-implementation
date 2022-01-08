@@ -7,6 +7,10 @@
 - Singleton
 - Factory
 - Mediator
+- Information Expert
+- Bridge
+- High Cohesion
+- Composite
 
 ##### About the code
 
@@ -26,14 +30,14 @@ As this code will be later plugged into other code so the error handling is done
 
 ##### How to run this code
 
-- The driver class for this code is
-    `teacher_controller.py`
+- The driver file for this code is
+    `information_handler.py`
 - This code requires some configurations to run, so they need to be added correctly in
     `config.json` our code provides a sample file with the sample required values named as `config_sample.json` 
 - You need to do the above step according to the values in the database but sample config file currently contains correct data according to current database file and for now the db file name can only be changed by changing code file
 - This code can be run in two ways. First by [`python >= 3`](https://www.python.org/downloads/) (needs to be installed) by using following command in the same directory as the code
 
-    `python ./teacher_controller.py`
+    `python ./information_handler.py`
 
 - The other way this code can be run is by using the [`docker`](https://www.docker.com/) install by clicking on it if not
 - First build the image by using following command in the same directory as code

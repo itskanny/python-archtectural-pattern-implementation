@@ -4,4 +4,4 @@ WORKDIR /patterns
 
 #COPY . .
 
-CMD [ "python", "./teacher_controller.py" ]
+CMD [ "python", "./information_handler.py" ]

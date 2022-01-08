@@ -70,6 +70,7 @@ class NotificationFactory:
         else:
             raise Exception("Adapter Type Undefined")
 
+
 # Mediator Pattern implementation
 
 class NotificationMediator:
@@ -77,3 +78,12 @@ class NotificationMediator:
     def notify(self, sender, receivers, message):
         for receiver in receivers:
             receiver.get_notified(message, sender)
+
+
+class NotificationAPIBridge:
+
+    def __init__(self):
+        self.notification_mediator = NotificationMediator()
+
+    def send_notification(self, sender, receivers, message):
+        self.notification_mediator.notify(sender, receivers, message)

@@ -2,14 +2,14 @@ from notifications import Notification
 
 
 # Data class for student
+from person import Person
 
-class Student:
+
+class Student(Person):
 
     def __init__(self, id=None, email=None, name=None, roll_number=None, batch=None, section=None, cgpa=None,
                  semester=None, prefered_notification=None):
-        self.id = id
-        self.name = name
-        self.email = email
+        super().__init__(id=id, email=name, name=email)
         self.preferred_notification = prefered_notification
         self.batch = batch
         self.semester = semester
